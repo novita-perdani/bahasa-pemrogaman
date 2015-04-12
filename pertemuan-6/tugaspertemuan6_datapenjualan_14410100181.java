@@ -15,7 +15,7 @@ public class tugaspertemuan6_datapenjualan_14410100181 {
 		};
 		
 		int []hrg_brg 		= {2000,5000,1000,500};
-		String [] barang 	= {"Pensil 2B","Buku Tulis","Penggaris","Penghapus"};
+		String [] barang 	= {"Pensil 2B","Buku Tulis","Penggaris","Tipe ex"};
 		int [] perhari 		= new int[6];
 		int sum_barang 		= 0;
 		int tot_harga  		= 0;
