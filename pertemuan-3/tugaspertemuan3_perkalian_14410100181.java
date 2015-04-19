@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 //NOVITA PERDANI - 14410100181
 
-public class tugaspertemuan3_perkalian_1441010018110 {
+public class tugaspertemuan3_perkalian_14410100181 {
 	 public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
 		

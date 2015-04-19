@@ -42,7 +42,7 @@ public class latihanpertemuan6_arraymultidimensi_14410100181 {
 			}
 			System.out.println();
 		}
-		System.out.println()
+		System.out.println();
 		
 		
 		
