@@ -185,6 +185,9 @@ public class tugaspertemuan6_tiketpesawat_14410100181 {
 						System.out.println("------------------------ +");
 						System.out.println("Total	: "+(vip+bisnis+ekonomi));
 						break;
+				case 6 :
+						System.exit(0);
+						break;
 			 }
 		 }
 		 while (pil<6);
