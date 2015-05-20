@@ -4,7 +4,7 @@ import java.lang.Math;
 
 //NOVITA PERDANI - 14410100181
 
-public class tugaspertemuan7_daftarisi_14410100181 {
+public class tugaspertemuan8_daftarisi_14410100181 {
 	 
 	 public static int jmlbab() {
 		 Scanner input = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class tugaspertemuan7_daftarisi_14410100181 {
 	 }
 	 
 	 public static void main(String args[]) {
-		 int input = jmlbab() ;	
+		 int input = jmlbab();	
          String [][] data = inputdaftarisi(input);	
 		 showdaftarisi(data);		
 	 }

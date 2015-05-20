@@ -9,7 +9,7 @@ DHETA AMELYA K. - 14410100182
 */
 
 
-public class sequensial_search {
+public class latihanpertemuan11_sequensialsearch_14410100181 {
 	
 	
 	public static String daftarNim[] = {"08410100375","10410100146","10410100162","11410100142","12410100049",
@@ -76,7 +76,7 @@ public class sequensial_search {
 				System.out.println("NAMA " +nama+ " TIDAK KETEMU");
 		}
 		
-	 }
+	}
 	 
 	 
 }
