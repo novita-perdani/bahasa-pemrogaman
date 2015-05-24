@@ -9,9 +9,8 @@ public class tugaspertemuan4_belajarpenjumlahan_14410100181 {
 		 
 		 Scanner input = new Scanner(System.in);
 		 System.out.println("=================== INPUT ===================");
-		 System.out.print("Masukkan jumlah soal random : ");
+		 System.out.print("Masukkan jumlah soal random : "); int n=input.nextInt();
 		 
-		 int n=input.nextInt();
 		 int nilai=0;
 		 int i=1;
 		 int jawab=0;
