@@ -6,7 +6,7 @@ NOVITA PERDANI  - 14410100181
 */
 
 
-public class latihanpertemuan12_searcharray2dimensi_14410100181 {
+public class latihanpertemuan11_searcharray2dimensi_14410100181 {
 	
 	
 	public static String [][] daftarMhs = { 

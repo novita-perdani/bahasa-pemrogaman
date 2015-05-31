@@ -2,11 +2,14 @@ import java.lang.System.*;
 import java.util.Scanner;
 
 /*
+AUDA RIZKY A.   - 14410100175
+AFIF LUTFIAN F. - 14410100179
 NOVITA PERDANI  - 14410100181
+DHETA AMELYA K. - 14410100182
 */
 
 
-public class latihanpertemuan12_filter_14410100181 {
+public class latihanpertemuan10_sequensialsearch_14410100181 {
 	
 	
 	public static String daftarNim[] = {"08410100375","10410100146","10410100162","11410100142","12410100049",
@@ -28,75 +31,52 @@ public class latihanpertemuan12_filter_14410100181 {
 										 "Ach Nofal Kurniawan","Andri Anggara","Auda Rizqi Aulany","Noppy Wahyono Suwoto","Arya Teja",
 										 "Nuari Imas Masita","Afif Lutfian Fahmi Chudlori","Novita Perdani","Dheta Amelya Kurniawendy"};
 	
-
-	public static String [] filterNama(String [] data_nama, String cari) {
-		//1.Hitung jumlah data yang mengandung kata nama
-			int counter = 0;
-			for(int i=0;i<data_nama.length;i++) {
-				counter++;
+	
+	public static boolean cariByNim(String [] data_nim, String cari){
+		int i = 0; 
+		boolean ketemu = false;
+		for (i=0; i<data_nim.length; i++) {
+			if (data_nim[i].equalsIgnoreCase(cari)) {
+			ketemu = true;
 			}
-		//2. buat array of string dengan panjang jumlah data pada langkah 1
-			String[] arr = new String[counter];
-		//3. lakukan looping lagi untuk mengecel nama
-			counter = 0;
-			for(int i=0;i<data_nama.length;i++) {		
-		//4. jika mengandung nama yang dicari
-				if(data_nama[i].contains(cari)) {
-					arr[counter]=data_nama[i];
-					counter++;
-				}
-			}
-		//5. return array of string
-		return arr;
+		}
+		return ketemu;
 	}
-	
-	
-	public static String [] filterNim(String [] data_nim, String cari2) {
-			int counter2 = 0;
-			for(int i=0;i<data_nim.length;i++) {
-				counter2++;
+  
+  
+	public static boolean cariByNama(String [] data_nama, String cari2){   
+		int j = 0; 
+		boolean ketemu2 = false;
+		for (j=0; j<data_nama.length; j++) {
+			if (data_nama[j].equalsIgnoreCase(cari2)) {
+				ketemu2 = true;
 			}
-			String[] arr2 = new String[counter2];
-			counter2 = 0;
-			for(int j=0;j<data_nim.length;j++) {		
-				if(data_nim[j].contains(cari2)) {
-					arr2[counter2]=data_nim[j];
-					counter2++;
-				}
-			}
-		return arr2;
+		}
+		return ketemu2;
 	}
 	
 	
 	public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
-		
 		System.out.println("=================== INPUT ===================");
-		System.out.print("Inputkan filter nama : "); String filter = input.nextLine();
-		
-		System.out.println("--------------------------------- OUTPUT ---------------------------------");
-		String [] hasilFilterNama = filterNama(daftarNama,filter);
-		for(int i=0;i<hasilFilterNama.length;i++) {	
-			if(hasilFilterNama[i]!=null){
-				System.out.println(hasilFilterNama[i]);
-			}
-		}
+		System.out.print("Inputkan Nim : "); String nim = input.nextLine();
+		System.out.print("Inputkan Nama : "); String nama = input.nextLine();
 		
 		System.out.println();
-		System.out.println();
-		System.out.println("=================== INPUT ===================");
-		System.out.print("Inputkan filter angkatan : "); String filter2 = input.nextLine();
-	
-		System.out.println("--------------------------------- OUTPUT ---------------------------------");
-		String [] hasilFilterNim = filterNim(daftarNim,filter2);
-		for(int j=0;j<hasilFilterNim.length;j++) {	
-			if(hasilFilterNim[j]!=null){
-				System.out.println(hasilFilterNim[j]);
-			}
+		System.out.println("================== OUTPUT ===================");
+		if(cariByNim(daftarNim,nim)==true){
+			System.out.println("NIM " +nim+ " KETEMU");
+			}else{
+				System.out.println("NIM " +nim+ " TIDAK KETEMU");
 		}
 		
+		if(cariByNama(daftarNama,nama)==true){
+			System.out.println("NAMA " +nama+ " KETEMU");
+			}else{
+				System.out.println("NAMA " +nama+ " TIDAK KETEMU");
+		}
 		
-	 }
+	}
 	 
 	 
 }

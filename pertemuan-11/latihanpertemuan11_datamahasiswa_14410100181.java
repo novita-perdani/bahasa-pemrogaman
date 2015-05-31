@@ -6,7 +6,7 @@ NOVITA PERDANI  - 14410100181
 */
 
 
-public class latihanpertemuan12_datamahasiswa_14410100181 {
+public class latihanpertemuan11_datamahasiswa_14410100181 {
 	
 	
 	public static String daftarNim[] = {"08410100375","10410100146","10410100162","11410100142","12410100049",
