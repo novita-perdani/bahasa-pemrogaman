@@ -140,7 +140,7 @@ public class latihanpertemuan12_filterarray2dimensi_14410100181 {
 		}
 		
 		System.out.println();
-		System.out.println("================= OUTPUT ANGKATAN =================");
+		System.out.println("================= FILTER ANGKATAN =================");
 		System.out.print("Inputkan Angkatan : "); String angkatan = input.nextLine();
 		System.out.println("-------------------------------------------------");
 		String [][] hasilFilterAngkatan = filterAngkatan(daftarMhs,angkatan);
@@ -148,6 +148,7 @@ public class latihanpertemuan12_filterarray2dimensi_14410100181 {
 			if(hasilFilterAngkatan[j][0]!=null){
 				System.out.println("NIM : " + hasilFilterAngkatan[j][0]);
 				System.out.println("NAMA : " + hasilFilterAngkatan[j][1]);
+				System.out.println();
 			}
 		}
 		
