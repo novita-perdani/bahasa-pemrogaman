@@ -287,7 +287,7 @@ public class projek_uas {
 	
 
 	public static void update_barang(String [][] data_barang, String id_barang, String nama, String harga_beli, String harga_jual) {	
-		String index_update = identikasi_barang(data_barang,id_barang); // cari nilai index array sesuai nim yang di tentukan
+		String index_update = identikasi_barang(data_barang,id_barang); 
 		if(index_update!= "kosong"){
 			int index = Integer.parseInt(index_update);
 			master_barang[index][1] = nama;
