@@ -302,7 +302,7 @@ public class projek_uas {
 	
 	
 	public static void delete_barang(String [][] data_barang, String id_barang) {
-		String index_update = identikasi_barang(data_barang,id_barang); // cari nilai index array sesuai id_barang yang di tentukan
+		String index_update = identikasi_barang(data_barang,id_barang); 
 		int index_akhir     = data_barang.length - 1;
 		int i				= 0;
 		if(index_update!= "kosong"){
