@@ -185,7 +185,6 @@ public class projek_uas {
 					counter++;
 				}
 			}
-            
 		}
 		return arr2;
 		
@@ -215,8 +214,7 @@ public class projek_uas {
 				System.out.println("Total Penjualan\t: "+total);
 				System.out.println();
 			}
-		}
-		
+		}	
 	}
 	
 	
@@ -316,7 +314,7 @@ public class projek_uas {
 					}
 					temp[i][0] = data_barang[j][0];
 					temp[i][1] = data_barang[j][1];
-                                        temp[i][2] = data_barang[j][2];
+                    temp[i][2] = data_barang[j][2];
 					temp[i][3] = data_barang[j][3];
 				}
 			}
